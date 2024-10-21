@@ -3,9 +3,12 @@ import "./App.css";
 import { Routes, Route, HashRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Table from "./components/Table";
 import Nav from "./components/Nav";
 import LogLink from "./components/LogLink";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import NewAccount from "./pages/NewAccount";
+import Statistics from "./pages/Statistics";
 
 function App() {
   return (
@@ -16,7 +19,16 @@ function App() {
           <Header />
           <Nav />
           <Routes>
-            <Route path="/" element={<Table />} />
+            <Route exact path="/" element={<Home />} />
+          </Routes>
+          <Routes>
+            <Route exact path="/statistics" element={<Statistics />} />
+          </Routes>
+          <Routes>
+            <Route exact path="/login" element={<Login />} />
+          </Routes>
+          <Routes>
+            <Route exact path="/login/new-account" element={<NewAccount />} />
           </Routes>
           <Footer />
         </div>

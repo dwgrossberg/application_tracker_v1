@@ -9,6 +9,10 @@
   gap: 75px;
 }
 
+.headerText {
+  font-size: 18px;
+}
+
 .loginLogout {
   position: relative;
 }
@@ -49,6 +53,7 @@ summary {
 
 details[open] {
   padding: 0.5em;
+  width: 17em;
 }
 
 details[open] summary {
@@ -62,6 +67,77 @@ details[open] summary {
   align-items: center;
 }
 
+.detailBox {
+  width: 14em;
+}
+
+details label {
+  width: 6em;
+}
+
 select {
   margin-top: 0.5em;
+}
+
+.loginRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 37vw;
+  gap: 2em;
+}
+
+.loginRow input {
+  width: 20vw;
+}
+
+.newAccountLink {
+  font-size: 14px;
+  position: relative;
+}
+
+.newAccountLink :first-child {
+  position: absolute;
+  left: 0;
+}
+
+.statisticsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+
+.statisticsWrapper button {
+  width: 200px;
+}
+
+.statistics {
+  display: flex;
+  gap: 2vw;
+}
+
+.statisticsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  width: 25vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statisticsCell {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.statistic {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.statisticText {
+  font-size: 1.5em;
+  font-weight: bold;
 }

@@ -35,7 +35,7 @@ const TableRow = () => {
           <summary>Details</summary>
           <div className="detailRow">
             <label for="dateApplied">Date Applied</label>
-            <input name="dateApplied" type="date" />
+            <input className="detailBox" name="dateApplied" type="date" />
           </div>
           <div className="detailRow">
             <label for="onlineAssessment">Online Assessment</label>
@@ -47,13 +47,24 @@ const TableRow = () => {
           </div>
           <div className="detailRow">
             <label for="interview">Interview Round</label>
-            <select name="interview">
+            <select className="detailBox" name="interview">
               <option></option>
               <option>One</option>
               <option>Two</option>
               <option>Three</option>
               <option>Four</option>
               <option>Five</option>
+            </select>
+          </div>
+          <div className="detailRow">
+            <label for="result">Result</label>
+            <select className="detailBox" name="interview">
+              <option></option>
+              <option>No Response</option>
+              <option>Rejection</option>
+              <option>In Process</option>
+              <option>Verbal Offer</option>
+              <option>Signed Offer</option>
             </select>
           </div>
         </details>

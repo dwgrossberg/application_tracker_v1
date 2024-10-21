@@ -4,7 +4,8 @@ const LogLink = () => {
   return (
     <div className="loginLogout">
       <div>
-        <NavLink to="/login">Login</NavLink> / <NavLink to="/">Logout</NavLink>
+        <NavLink to="/login">Login</NavLink> /{" "}
+        <NavLink to="/logout">Logout</NavLink>
       </div>
     </div>
   );
