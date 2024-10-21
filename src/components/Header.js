@@ -15,7 +15,7 @@ const Header = () => {
           </p>
         )}
         {path === "/statistics" && <p>View application statistics and data.</p>}
-        {path === "/statistics/sankey" && <p>Visualize application data.</p>}
+        {path === "/statistics/visualize" && <p>Visualize application data.</p>}
         {path === "/login" && (
           <p>Login to save application data to your profile.</p>
         )}

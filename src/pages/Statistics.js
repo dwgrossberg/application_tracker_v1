@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Statistics = () => {
   return (
     <div className="statisticsWrapper">
-      <NavLink to="sankey">
+      <NavLink to="visualize">
         <button>Visualize Data</button>
       </NavLink>
       <div className="statistics">

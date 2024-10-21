@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NewAccount from "./pages/NewAccount";
 import Statistics from "./pages/Statistics";
+import VisualizeData from "./pages/VisualizeData";
 
 function App() {
   return (
@@ -23,6 +24,13 @@ function App() {
           </Routes>
           <Routes>
             <Route exact path="/statistics" element={<Statistics />} />
+          </Routes>
+          <Routes>
+            <Route
+              exact
+              path="/statistics/visualize"
+              element={<VisualizeData />}
+            />
           </Routes>
           <Routes>
             <Route exact path="/login" element={<Login />} />

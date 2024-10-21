@@ -38,6 +38,10 @@ const TableRow = () => {
             <input className="detailBox" name="dateApplied" type="date" />
           </div>
           <div className="detailRow">
+            <label for="referral">Referral</label>
+            <input type="checkbox" name="referral"></input>
+          </div>
+          <div className="detailRow">
             <label for="onlineAssessment">Online Assessment</label>
             <input type="checkbox" name="onlineAssessment"></input>
           </div>
