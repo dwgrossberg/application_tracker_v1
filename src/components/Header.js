@@ -9,10 +9,13 @@ const Header = () => {
       <hr></hr>
       <div className="headerText">
         {path === "/" && (
-          <p>
-            Browse current internship listings and easily track your application
-            status.
-          </p>
+          <div>
+            <p>Browse current internship listings.</p>
+            <p>
+              Fill in listing details to and easily track your application
+              status and save data to your account.
+            </p>
+          </div>
         )}
         {path === "/statistics" && <p>View application statistics and data.</p>}
         {path === "/statistics/visualize" && <p>Visualize application data.</p>}

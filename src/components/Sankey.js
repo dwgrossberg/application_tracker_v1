@@ -2,15 +2,49 @@ import { Chart } from "react-google-charts";
 
 export const data = [
   ["From", "To", "Weight"],
-  ["A", "X", 5],
-  ["A", "Y", 7],
-  ["A", "Z", 6],
-  ["B", "X", 2],
-  ["B", "Y", 9],
-  ["B", "Z", 4],
+  ["Cold Application", "Rejection", 1],
+  ["Cold Application", "Rejection", 1],
+  ["Cold Application", "Rejection", 1],
+  ["Cold Application", "Rejection", 1],
+  ["Cold Application", "Rejection", 1],
+  ["Cold Application", "Rejection", 1],
+  ["Cold Application", "Rejection", 1],
+  ["Cold Application", "First Interview", 1],
+  ["First Interview", "Second Interview", 1],
+  ["Cold Application", "Phone Screen", 1],
+  ["Cold Application", "Phone Screen", 1],
+  ["Cold Application", "Online Assessment", 1],
+  ["Cold Application", "Online Assessment", 1],
+  ["Cold Application", "Online Assessment", 1],
+  ["Cold Application", "Online Assessment", 1],
+  ["Cold Application", "Online Assessment", 1],
+  ["Cold Application", "Online Assessment", 1],
+  ["Referral", "Phone Screen", 1],
+  ["Referral", "Phone Screen", 1],
+  ["Referral", "Phone Screen", 1],
+  ["Phone Screen", "First Interview", 1],
+  ["Referral", "Phone Screen", 1],
+  ["Phone Screen", "First Interview", 1],
+  ["Referral", "Phone Screen", 1],
+  ["First Interview", "Rejection", 1],
+  ["Referral", "Rejection", 1],
+  ["Online Assessment", "Phone Screen", 1],
+  ["Phone Screen", "First Interview", 1],
+  ["First Interview", "Second Interview", 1],
+  ["Second Interview", "Third Interview", 1],
+  ["Third Interview", "Rejection", 1],
+  ["Cold Application", "Online Assessment", 1],
+  ["Phone Screen", "First Interview", 1],
+  ["First Interview", "Second Interview", 1],
+  ["Second Interview", "Third Interview", 1],
+  ["Third Interview", "Offer", 1],
 ];
 
-export const options = {};
+export const options = {
+  sankey: {
+    node: { label: { color: "#FFFFFF", fontSize: 14 } },
+  },
+};
 
 const Sankey = () => {
   return (

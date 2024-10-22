@@ -67,6 +67,12 @@ details[open] summary {
   align-items: center;
 }
 
+.detailRow button {
+  width: 150px;
+  font-size: 14px;
+  margin-left: calc(50% - 75px);
+}
+
 .detailBox {
   width: 14em;
 }

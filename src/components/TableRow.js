@@ -4,19 +4,19 @@ import BurgerMenu from "../assets/burger-menu-left-svgrepo-com.svg";
 
 const TableRow = () => {
   const [appliedStatus, setAppliedStatus] = useState(false);
-  const [showDetails, setShowDetails] = useState(false);
 
   const handleCheck = () => {
     setAppliedStatus(!appliedStatus);
   };
 
-  const handleExpandRow = () => {
-    setShowDetails(!showDetails);
+  const handleDelete = () => {
+    window.alert(
+      "Are you sure you want to delete this listing? Doing so will remove any linked data from your account."
+    );
   };
 
   const rowClassNames = classNames({
     applied: appliedStatus,
-    expandRow: showDetails,
   });
 
   return (
@@ -70,6 +70,9 @@ const TableRow = () => {
               <option>Verbal Offer</option>
               <option>Signed Offer</option>
             </select>
+          </div>
+          <div className="detailRow">
+            <button onClick={handleDelete}>Remove Listing</button>
           </div>
         </details>
       </td>
